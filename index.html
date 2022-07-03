@@ -5,11 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiveCountsEdit Compare</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-minimal.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="chan1" class="chan">
-        <p>Channel 1</p>
-        
-    </div>
+    <center>
+        <h1>LiveCountsEdit Compare</h1>
+        <div id="chan1" class="chan">
+            <h2 id="chan1Name" class="chan-name">Channel 1</h2>
+            <div id="chan1Count" class="odometer"></div>
+            <br/>
+            subscribers
+            <br/>
+            <br/>
+            <input type="number" id="chan1CountEdit" class="count-edit">
+            <button id="chan1Sub" class="submit-but">Submit</button>
+        </div>
+        <div id="chan2" class="chan">
+            <h2 id="chan2Name" class="chan-name">Channel 2</h2>
+            <div id="chan2Count" class="odometer"></div>
+            <br/>
+            subscribers
+            <br/>
+            <br/>
+            <input type="number" id="chan2CountEdit" class="count-edit">
+            <button id="chan2Sub" class="submit-but">Submit</button>
+        </div>
+    </center>
+    <span id="thanks">Inspired by RandomPerson3465</span>
 </body>
 </html>
